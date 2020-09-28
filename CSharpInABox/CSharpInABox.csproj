@@ -6,8 +6,4 @@
     <StartupObject>CSharpInABox.Program</StartupObject>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\..\..\csv\Volcano.csv" Link="Volcano.csv" />
-  </ItemGroup>
-
 </Project>
