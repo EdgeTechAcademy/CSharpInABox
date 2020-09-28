@@ -181,22 +181,5 @@ namespace CSharpInABox
             string[] lines = File.ReadAllLines("C:/projects/csv/" + fileName);
             return lines;
         }       //end ReadFile()
-
-        public static List<string> ReadFileList(string fileName)
-        {
-            List<string> lines = new List<string>();
-
-            //  Open a file as a Stream
-            StreamReader textFile = new StreamReader("C:/projects/csv/" + fileName);
-
-            //  read loop
-            string line;
-            while ((line = textFile.ReadLine()) != null)
-            {
-                lines.Add(line);
-            }
-            textFile.Close();
-            return lines;
-        }       //end ReadFile()
     }
 }
