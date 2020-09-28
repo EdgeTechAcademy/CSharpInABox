@@ -10,10 +10,10 @@ namespace CSharpInABox
         static void Main(string[] args)
         {
             List<Volcano> lVolcanoes = Volcano.RetrieveVolcanoData();
-            var v1985 = lVolcanoes.Where(v => v.Year > 1985);
-            int deaths = v1985.Sum(v => v.Death);
-            v1985.ToList().ForEach(v => Console.WriteLine(v));
-            Console.WriteLine($"Deaths since 1985: {deaths}");
+            var v1995 = lVolcanoes.Where(v => v.Year > 1995);
+            v1995.ToList().ForEach(v => Console.WriteLine(v));
+            int deaths = v1995.Sum(v => v.Deaths);
+            Console.WriteLine($"Deaths since 1995: {deaths} from {v1995.Count()} eruptions");
         }
     }
 }
