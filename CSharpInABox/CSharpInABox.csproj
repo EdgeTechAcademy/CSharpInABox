@@ -3,7 +3,11 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>CSharpInABox.Switching</StartupObject>
+    <StartupObject>CSharpInABox.Program</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\csv\Volcano.csv" Link="Volcano.csv" />
+  </ItemGroup>
 
 </Project>
