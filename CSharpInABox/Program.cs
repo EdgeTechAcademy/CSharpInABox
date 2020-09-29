@@ -9,7 +9,7 @@ namespace CSharpInABox
     {
         static void Main(string[] args)
         {
-            List<Volcano> lVolcanoes = Volcano.RetrieveVolcanoData();
+            List<Volcano> lVolcanoes = Volcano.LoadVolcanoData();
             var v1995 = lVolcanoes.Where(v => v.Year > 1995);
             v1995.ToList().ForEach(v => Console.WriteLine(v));
             int deaths = v1995.Sum(v => v.Deaths);

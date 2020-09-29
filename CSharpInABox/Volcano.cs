@@ -39,7 +39,7 @@ namespace CSharpInABox
          *          convert to a List<Volcano> object
          *      
          */
-        public static List<Volcano> RetrieveVolcanoData()
+        public static List<Volcano> LoadVolcanoData()
         {
             var volcanoes = Utils.ReadFile("volcano.csv");
             List<Volcano> lVolcanoes = new List<Volcano>();
