@@ -9,11 +9,16 @@ namespace CSharpInABox
     {
         static void Main(string[] args)
         {
+            //  read a file from your hard drive with a list of all Volcanoes
             List<Volcano> lVolcanoes = Volcano.LoadVolcanoData();
-            var v1995 = lVolcanoes.Where(v => v.Year > 1995);
-            v1995.ToList().ForEach(v => Console.WriteLine(v));
-            int deaths = v1995.Sum(v => v.Deaths);
-            Console.WriteLine($"Deaths since 1995: {deaths} from {v1995.Count()} eruptions");
+
+            //  Using the LINQ method Where get all Volcanoes since 2015
+            var v2015 = lVolcanoes.Where(v => v.Year > 2015);
+
+            //  Using the LINQ method ForEach print all Volcanoes since 2015
+            v2015.ToList().ForEach(v => Console.WriteLine(v));
+            int deaths = v2015.Sum(v => v.Deaths);
+            Console.WriteLine($"Since 1995 there have been {deaths} deaths from {v2015.Count()} eruptions");
         }
     }
 }
