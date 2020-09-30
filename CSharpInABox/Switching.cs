@@ -44,6 +44,18 @@ namespace CSharpInABox
                     case 'L': phrase = "L is for Lion"; break;
                     case 'M': phrase = "M is for Mouse"; break;
                     case 'N': phrase = "N is for Nose"; break;
+                    case 'O': phrase = "O is for O"; break;
+                    case 'P': phrase = "P is for P"; break;
+                    case 'Q': phrase = "Q is for Q"; break;
+                    case 'R': phrase = "R is for R"; break;
+                    case 'S': phrase = "S is for S"; break;
+                    case 'T': phrase = "T is for T"; break;
+                    case 'U': phrase = "U is for U"; break;
+                    case 'V': phrase = "V is for V"; break;
+                    case 'W': phrase = "W is for W"; break;
+                    case 'X': phrase = "X is for X"; break;
+                    case 'Y': phrase = "Y is for Y"; break;
+                    case 'Z': phrase = "Z is for Z"; break;
                     default: phrase = $"{letter} is unknown"; break;
                 }
                 Console.WriteLine(phrase);
